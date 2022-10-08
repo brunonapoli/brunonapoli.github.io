@@ -172,12 +172,7 @@ input, select, textarea {
 		outline: 0;
 	}
 
-		/* a:hover {
-			color: #E27689;
-			border-bottom-color: rgba(255, 255, 255, 0);
-			transform: scale(1.2);
-		} */
-
+		
 		img:hover .knowledge {
 			transform: scale(1.2);
 		}
@@ -202,6 +197,9 @@ input, select, textarea {
 		}
 		.fa-node {
 			color: rgb(18, 110, 18);
+		}
+		.fa-git-alt {
+			color: #f14e32;
 		}
 
 	sub {
@@ -1873,7 +1871,7 @@ input, select, textarea {
 	form select,
 	form textarea {
 		position: relative;
-		-webkit-appearance: none;
+		/* -webkit-appearance: none; */
 		display: block;
 		border: 0;
 		outline: 0;
@@ -2670,7 +2668,14 @@ input, select, textarea {
 				#footer .copyright li:first-child {
 					margin-top: 0;
 				}
+			
+			.tooltip-img  img {
+				width: 50px !important;
+			}
 
+			.tooltip-img .knowledge-mongo {
+				width: 100px !important;
+			}
 	}
 
 .btn-github {
@@ -2689,4 +2694,89 @@ input, select, textarea {
 }
 .project-3:hover {
 	background-color: #0099CC;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 6px;
+	padding: 10px 0;
+	top: 85%;
+	left: 50%;
+	margin-left: -60px;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+.tooltip .node-text {
+	top: 70%;
+}
+
+/* Tooltip container */
+.tooltip-img {
+	position: relative;
+	display: inline-block;
+}
+  
+  /* Tooltip text */
+.tooltip-img .tooltiptext-img {
+	visibility: hidden;
+	width: 120px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 6px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	/* Position the tooltip text */
+	position: absolute;
+	z-index: 1;
+	top: 80%;
+	left: 60%;
+	margin-left: -60px;
+}
+
+.tooltip-img img:hover + .tooltiptext-img {
+	visibility: visible;
+}
+
+.tooltip-img .vue-text {
+	color: #41b883;
+}
+
+.tooltip-img .next-text {
+	color: #000;
+}
+
+.tooltip-img .node-text {
+	color: #303030;
+	top: 70%;
+}
+
+.tooltip-img .python-text {
+	color: #4B8BBE;
+}
+
+.tooltip-img .python-text:after {
+	color: #FFE873;
+	content: "hon";
+}
+
+.tooltip-img .mongodb-text {
+	top: 70%;
+	left: 60%;
+	color: #3F3E42; 
+}
+
+.tooltip-img .mongodb-text:after {
+	color: #C1BEBC;
+	content: "DB";
 }
