@@ -16,7 +16,6 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<!-- <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span> -->
 							<span class="image avatar48"><img src="assets/css/images/cv/Foto Porfafolio.jpg" alt="" /></span>
 							<h1 id="title">Bruno Napoli</h1>
 							<p>Full-Stack Developer</p>
@@ -82,27 +81,43 @@
 						<header class="sub-title">
 							<!-- <h3>Front-End</h3> -->
 						</header>
-
-						<a class="icon brands knowledge fa-html5 fa-3x"><span class="label">HTML</span></a>
-						<a class="icon brands knowledge fa-css3-alt fa-3x"><span class="label">CSS</span></a>
-						<a class="icon brands knowledge fa-bootstrap fa-3x"><span class="label">Bootstrap</span></a>
-						<a class="icon brands knowledge fa-js-square fa-3x"><span class="label">Javascript</span></a>
-						<img class="knowledge" src="/assets/css/images/icons/vue-icon.png" style="width: 65px; margin-left: 15px;" alt="Vue.js">
-						<img class="knowledge" src="/assets/css/images/icons/next-icon.png" style="width: 65px; margin-left: 15px;" alt="Next.js"> 
+						<!-- label -->
+						<a class="icon brands knowledge fa-html5 fa-3x tooltip" title="HTML"><span class="tooltiptext">HTML</span></a>
+						<a class="icon brands knowledge fa-css3-alt fa-3x tooltip" title="CSS"><span class="tooltiptext">CSS</span></a>
+						<a class="icon brands knowledge fa-bootstrap fa-3x tooltip" title="Bootstrap"><span class="tooltiptext">Bootstrap</span></a>
+						<a class="icon brands knowledge fa-js-square fa-3x tooltip" title="Javascript"><span class="tooltiptext">Javascript</span></a>
+						<div class="tooltip-img">
+							<img class="knowledge" src="/assets/css/images/icons/vue-icon.png" title="Vue.js" style="width: 65px; top: 100%; margin-left: 15px;" alt="Vue.js">
+							<span class="tooltiptext-img vue-text">Vue.js</span>
+						</div>
+						<div class="tooltip-img">
+							<img class="knowledge" src="/assets/css/images/icons/next-icon.png" title="Next.js" style="width: 65px; margin-left: 15px;" alt="Next.js"> 
+							<span class="tooltiptext-img next-text">Next.js</span>
+						</div>
 
 						<header class="sub-title">
 							<!-- <h3>Back-End</h3> -->
 						</header>
+						
+						<div class="tooltip-img">
+							<img class="knowledge" src="/assets/css/images/icons/node-icon.png" style="width: 75px; margin-left: 15px;" alt="MongoDB" title="MongoDB">
+							<span class="tooltiptext-img node-text">Node.js</span>
+						</div>
 
-						<a class="icon brands knowledge fa-node fa-3x"><span class="label">Node.js</span></a>
-						<img class="knowledge" src="/assets/css/images/icons/mongodb-icon.png" style="margin-left: 15px;" alt="MongoDB">
+						<div class="tooltip-img">
+							<img class="knowledge knowledge-mongo" src="/assets/css/images/icons/mongodb-icon.png" style="width: 140px; margin-left: 15px;" alt="MongoDB" title="MongoDB">
+							<span class="tooltiptext-img mongodb-text">Mongo</span>
+						</div>
 
 						<header class="sub-title">
 							<!-- <h3>Programación</h3> -->
 						</header>
 
-						<img class="knowledge" src="/assets/css/images/icons/python-icon.png" style="width: 72px; margin-left: 15px;" alt="Python">
-						<img class="knowledge" src="/assets/css/images/icons/git-icon.png" style="width: 70px; margin-left: 15px;" alt="Git"> 
+						<div class="tooltip-img">
+							<img class="knowledge" src="/assets/css/images/icons/python-icon.png" title="Python" style="width: 65px; margin-left: 15px;" alt="Python">
+							<span class="tooltiptext-img python-text">Pyt</span>
+						</div>
+						<a class="icon brands knowledge fa-git-alt fa-3x tooltip" title="Git"><span class="tooltiptext">Git</span></a>
 					</div>
 				</section>
 
@@ -120,7 +135,7 @@
 									<article class="item">
 										<header>
 											<h2>Álbum Figuritas 2022</h2>
-											<a href="https://github.com/brunonapoli/album-app" class="image fit">
+											<a href="https://github.com/brunonapoli/album-app" target="_blank" class="image fit">
 												<img src="/assets/css/images/projects/album.png" alt="" />
 											</a>
 											<h3>Proyecto personal</h3>
@@ -135,7 +150,7 @@
 									<article class="item">
 										<header>
 											<h2>Piedra, Papel o Tijera</h3>
-											<a href="#" class="image fit">
+											<a href="https://github.com/brunonapoli/games-vue-node" target="_blank" class="image fit">
 												<img src="/assets/css/images/projects/juego.png" alt="" />
 											</a>
 											<h3>Proyecto personal</h3>
@@ -150,7 +165,7 @@
 									<article class="item">
 										<header>
 											<h2>To Do List</h2>
-											<a href="https://github.com/brunonapoli/toDoList-vue" class="image fit">
+											<a href="https://github.com/brunonapoli/toDoList-vue" target="_blank" class="image fit">
 												<img src="/assets/css/images/projects/list.png" alt="" />
 											</a>
 											<h3>Proyecto personal</h3>
@@ -158,7 +173,7 @@
 											<button onclick="parent.open('https://github.com/brunonapoli/toDoList-vue')" class="btn-github project-1" type="button">
 												Github
 											</button>
-											<button onclick="parent.open('https://weather-country-app.herokuapp.com/home.html')" class="btn-github project-1" type="button">
+											<button onclick="parent.open('https://todolist-vue-app.herokuapp.com/')" class="btn-github project-1" type="button">
 												Visitar página
 											</button>
 										</header>
@@ -168,7 +183,7 @@
 									<article class="item">
 										<header>
 											<h2>Clima por País</h2>
-											<a href="https://github.com/brunonapoli/restapi-weather-country" class="image fit">
+											<a href="https://github.com/brunonapoli/restapi-weather-country" target="_blank" class="image fit">
 												<img src="/assets/css/images/projects/pais.png" alt="" />
 											</a>
 											<h3>Proyecto personal</h3>
@@ -185,36 +200,6 @@
 							</div>
 						</div>
 					</section>
-
-				<!-- Contact -->
-					<!-- <section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>Elementum sem parturient nulla quam placerat viverra
-							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
-							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
-							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section> -->
-
 			</div>
 
 		<!-- Footer -->
