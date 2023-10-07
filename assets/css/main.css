@@ -2696,6 +2696,10 @@ input, select, textarea {
 	background-color: #0099CC;
 }
 
+.project-4:hover {
+	background-color: rgba(183, 18, 52);
+}
+
 .tooltip .tooltiptext {
 	visibility: hidden;
 	width: 120px;
